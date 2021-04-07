@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sachi Desai</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1>Happy Birthday Sachi</h1>
+      <h2>you've turned <span id = age></span></h2>
+      <script>
+      function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+document.getElementById("age").innerHTML = getAge("2002/08/04");
+</script>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/sachi_name.jpg" alt="angela-profile-img" class="sachi-img">
+      <h2>Sachi</h2>
+      <p class="intro">You are a sweet person and a bright and beautiful girl. You're growing older into a kind and responsible adult(hopefully:|).</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>Your Skills.</h2>
+      <div class="skill-row">
+        <img class="code-img" src="https://media.giphy.com/media/VEsfbW0pBu145PPhOi/giphy.gif" alt="code-img">
+
+        <h3>You're Smart</h3>
+        <p>You get good grades in school and can hold an intelligent conversation. You're sophisticated and can tackle any challenge you face with ease.</p>
+
+      </div>
+      <div class="skill-row">
+        <img class="chilli-img" src="https://media.giphy.com/media/sDa57qiN6T088/giphy.gif" alt="chillies-img">
+
+        <h3>You are a good friend.</h3>
+        <p>You are a great friend. You're always there when someone need you are you're good at keeping secrets.</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>We hope your next year is even better than last year.</h2>
+      <h3>May your next year be filled with fun and happiness</h3>
+      <p class="contact-message">જન્મદિવસ ની શુભકામના</p>
+
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <iframe width="300" height="154" src="https://w2.countingdownto.com/3537673" frameborder="0"></iframe>
+
+
+  </div>
+</body>
+
+</html>
